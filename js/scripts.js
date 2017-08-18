@@ -3,7 +3,7 @@ $(document).ready(function(){
   $("#ping-pong-form").submit(function(event){
     var numberInput = parseFloat($("#number-input").val());
     var output = pingPongReplacer(numberInput);
-    $("#output").text(output);
+    $("#output").append(output);
     event.preventDefault();
   });
 });
@@ -13,4 +13,5 @@ function pingPongReplacer(number){
     alert ("That is not a valid input. Please enter a whole number greater than one.");
     return "";
   }
+  return "<li></li>"
 };
