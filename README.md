@@ -17,6 +17,12 @@ _desired output: unordered list contains 7 item_
 * _Form returns one list item containing the number one when the number 1 is input_
 _example input: 1_
 _desired output: unordered list contains 1 list item stating '1'._
+* _Form returns number of list items equal to the number that was input, with non-multiples of 3 and 5 containing there number and without regard to what multiples of 3 and 5 contain._
+_example input: 3 item total including 1,2, [anything]_
+*_Form returns only the list items for the current input. Previous output is removed_
+_example input: entering 3 when there are already list items on the page _
+_desired output: 3 item total including 1,2, [anything]_
+_NOTE: This is fairly simple and probably should have been included earlier. It is included here because I didn't think of it until after implementing other behaviors.
 * _Form returns number of list items equal to the number that was input, with multiples of 3 switched to 'ping'_
 _example input: 3_
 _desired output: list items containing 1, 2, 'ping'_
