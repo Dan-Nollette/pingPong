@@ -10,9 +10,8 @@ $(document).ready(function(){
 
   $("#StandardOrAdvanced").change(function(event){
     event.preventDefault();
-    alert("change");
-
-
+    $("#ping-pong-form").toggle();
+    $(".advanced-forms").toggle();
   });
 });
 
