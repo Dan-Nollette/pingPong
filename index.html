@@ -10,21 +10,40 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="jumbotron">Ping Pong</h1>
-      <p>Enter a whole number greater than zero in the box. When you submit you'll see the number counting up to that number with mutiples of 3 replaced with 'ping', multiples of 5 replaced with 'pong', and multiples of both 3 and 5 replaced with 'ping-pong'</p>
+      <h1 class="jumbotron">Ping-Pong</h1>
+      <div class="side-info">
+        <h2>About Ping Pong</h2>
+        <h3>Created by:</h3>
+        <p id="notName">Dan Nollette</p>
+        <h3>GitHub Username/URL:</h3>
+        <p class="text-info">Dan-Nollette</p>
+        <h3>This Page:</h3>
+        <p id="notName">This page was created as part of my course of study at Epicodus. It mimics a page credited to Kit Fisto.</p>
+      </div>
+      <div class="main-content">
+        <h2>Let's play!</h2>
+        <h3>Rules:</h3>
+        <p>Ping Pong will count up to the number from 1 with the following exceptions:</p>
+        <ol>
+          <li>Numbers divisible by 3 become "ping"</li>
+          <li>Numbers divisible by 5 become "ping"</li>
+          <li>Numbers divisible by 15 become "ping-pong"</li>
+        </ol>
 
-      <form id="ping-pong-form" action="index.html" method="post">
-        <div class="form-group">
-          <label for="number-input"></label>
-          <input id="number-input" type="text" class="form-group" >
-        </div>
+        <form id="ping-pong-form" action="index.html" method="post">
+          <div class="form-group">
+            <label for="number-input">Inpput your Number Here!</label>
+            <input id="number-input" type="text" class="form-group">
 
-        <button type="submit" class="btn btn-primary" >Submit</button>
-      </form>
 
-      <ul id="output">
+            <button type="submit" class="btn">Ping Pong!</button>
+          </div>
+        </form>
 
-      </ul>
+        <ul id="output">
+
+        </ul>
+      </div>
     </div>
   </body>
 </html>

@@ -14,7 +14,7 @@ _{The page takes in a number and out puts a list of numbers with numbers divisib
 
 ### To view this page:
 * _Open your terminal program_
-* _Run the following command:git clone * `https://github.com/Dan-Nollette/trackSuggester.git`_
+* _Run the following command:git clone * `https://github.com/Dan-Nollette/pingPong.git`_
 * _open the file index.html in Chrome, or your browser of choice._
 * _This can be done on a Mac by finding the file in the Finder and clicking on it._
 * _The page should then load and you can take the quiz_
@@ -76,14 +76,9 @@ _desired output: list items containing 1, 2, 'ping', 4, 'pong'._
 * _Form returns number of list items equal to the number that was input, multiples of with 3 switched to 'ping' and multiples of 5 switched to 'pong' and multiples of 15 switched to ping-pong_
 _example input: _
 _desired output: list items containing 1, 2, 'ping', 4, 'pong', 'ping', 7, 8, 'pong', 'ping', 11, 'pong', 13, 14, 'ping-pong'._
- 
+
 ### License
 
 *This repository licensed under the MIT license*
 
 Copyright (c) 2017 **_Daniel J. Nollette_**
-
-
-
-
-Behavior spec

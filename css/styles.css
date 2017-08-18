@@ -1,7 +1,38 @@
-
-
-
-//User Interface (UI or Front-End)
-$(document).ready(functio//User Interface (UI or Front-End)n(){
-  $("#ping-pong-form")
-});
+.jumbotron {
+  text-align: center;
+  width: 100%;
+  margin: 0px;
+  background-color: #F2DFB5;
+}
+body {
+  border: black solid 3px;
+}
+.container {
+  padding: 0px;
+  width: 100%;
+  background-color: #E6E6E6;
+}
+.side-info {
+  padding-right: 3%;
+  padding-left: 1%;
+  float: left;
+  background-color: #90BA92;
+  max-width: 20%
+}
+.side-info h2 {
+  font-size: 24px;
+}
+.side-info h3 {
+  font-size: 16px;
+  color: #F2DFB5;
+}
+/*.side-info #name {
+  color: 	#83B0A7;
+}*/
+#notName {
+  color: white;
+}
+.main-content {
+  padding-left  : 23%;
+  padding-top: 3%;
+}
