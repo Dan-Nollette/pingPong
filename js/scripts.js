@@ -7,7 +7,16 @@ $(document).ready(function(){
     $("#output").append(output);
     event.preventDefault();
   });
+
+  $("#StandardOrAdvanced").change(function(event){
+    event.preventDefault();
+    alert("change");
+
+
+  });
 });
+
+
 
 
 //Business Logic (Back-End)
