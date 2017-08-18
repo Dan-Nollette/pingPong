@@ -9,7 +9,7 @@ $(document).ready(function(){
 });
 
 function pingPongReplacer(number){
-  if (number !== number || number % 1 !== 0){
+  if (number !== number || number % 1 !== 0 || number <= 0){
     alert ("That is not a valid input. Please enter a whole number greater than one.");
     return "";
   }
