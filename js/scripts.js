@@ -13,6 +13,13 @@ $(document).ready(function(){
     $("#ping-pong-form").toggle();
     $(".advanced-forms").toggle();
   });
+
+  $("#numberOfMultiples").submit(function(event){
+    event.preventDefault();
+    var advancedInput = parseFloat($("#advanced-input").val());
+    var advancedOutput = formIterator(advancedInput);
+    $("#manyMultiples").append(advancedOutput);
+  });
 });
 
 
@@ -35,6 +42,21 @@ function pingPongReplacer(number){
         outputString += "<li>" + i + "</li>";
       }
     }
+    return outputString;
+  }
+};
+
+function formIterator(number){
+  if (number !== number || number % 1 !== 0 || number <= 0){
+    alert ("That is not a valid input. Please enter a whole number greater than one.");
+  } else {
+    var outputString = "<form action=\"index.html\" id=\"input-form-" + index + "method=\"post\"\>";
+    var index = 0;
+    for (; index < number; index++){
+      outputString +=
+      "<div class=\"form-group\"\><label for=\"numberToChange\"\>Enter a number to have it's multiples changed:</label><input id=\"numberToChange\" type=\"text\" class=\"form-group\"><label for=\"wordToChange\">Enter the word you would like change it to:</label><input id=\"wordToChange-" + index + "\" type=\"text\" class=\"form-group\">";
+    }
+    outputString += "<button type=\"submit\" class=\"btn\">Ping Pong!</button></div></form>"
     return outputString;
   }
 };
