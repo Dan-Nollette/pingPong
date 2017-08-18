@@ -22,6 +22,18 @@ $(document).ready(function(){
   });
 });
 
+$(document).ready(function(){
+    $("#multi-input-form").submit(function(event){
+    var numbersWithMultiples = [];
+    var changeTo =[];
+    var changedAlready = []
+
+    numbersWithMultiples.push();
+    changeTo.push();
+    changedAlready.push(true);
+
+  });
+});
 
 
 
@@ -50,11 +62,11 @@ function formIterator(number){
   if (number !== number || number % 1 !== 0 || number <= 0){
     alert ("That is not a valid input. Please enter a whole number greater than one.");
   } else {
-    var outputString = "<form action=\"index.html\" id=\"input-form-" + index + "method=\"post\"\>";
+    var outputString = "<form action=\"index.html\" id=\"multi-input-form\" method=\"post\"\><div class=\"form-group\"><label for=\"number-input-advanced\">Enter the number to count up to here:</label><input id=\"number-input-advanced\" type=\"text\" class=\"form-group\"></div><br><br>";
     var index = 0;
     for (; index < number; index++){
       outputString +=
-      "<div class=\"form-group\"\><label for=\"numberToChange\"\>Enter a number to have it's multiples changed:</label><input id=\"numberToChange\" type=\"text\" class=\"form-group\"><label for=\"wordToChange\">Enter the word you would like change it to:</label><input id=\"wordToChange-" + index + "\" type=\"text\" class=\"form-group\">";
+      "<div class=\"form-group\"\><label for=\"numberToChange-" + index + "\"\>Enter a number to have it's multiples changed:</label><input id=\"numberToChange-" + index + "\" type=\"text\" class=\"form-group\"><label for=\"wordToChange-" + index + "\">Enter the word you would like change it to:</label><input id=\"wordToChange-" + index + "\" type=\"text\" class=\"form-group\"></div>";
     }
     outputString += "<button type=\"submit\" class=\"btn\">Ping Pong!</button></div></form>"
     return outputString;
