@@ -3,7 +3,7 @@ $(document).ready(function(){
   $("#ping-pong-form").submit(function(event){
     var numberInput = parseFloat($("#number-input").val());
     var output = pingPongReplacer(numberInput);
-    $("li").remove();
+    $("#output li").remove();
     $("#output").append(output);
     event.preventDefault();
   });
