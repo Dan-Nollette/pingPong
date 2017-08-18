@@ -14,7 +14,7 @@ _desired output: unordered list contains 1 list item
 * _Form returns number of list items equal to the number that was input (regardless of each list items content)._
 _example input: 7_
 _desired output: unordered list contains 7 item_
-* _Form returns one entry containing the number one when the number 1 is input_
+* _Form returns one list item containing the number one when the number 1 is input_
 _example input: 1_
 _desired output: unordered list contains 1 list item stating '1'._
 * _Form returns number of list items equal to the number that was input, with multiples of 3 switched to 'ping'_

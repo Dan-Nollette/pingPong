@@ -14,7 +14,7 @@ function pingPongReplacer(number){
   } else {
     var outputString = "";
     for(var i = 0; i < number; i++){
-      outputString += "<li></li>";
+      outputString += "<li>" + 1 + "</li>";
     }
     return outputString;
   }
