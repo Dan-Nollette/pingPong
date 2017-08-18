@@ -22,18 +22,26 @@ $(document).ready(function(){
   });
 });
 
-$(document).ready(function(){
-    $("#multi-input-form").submit(function(event){
-    var numbersWithMultiples = [];
-    var changeTo =[];
-    var changedAlready = []
-
-    numbersWithMultiples.push();
-    changeTo.push();
-    changedAlready.push(true);
-
-  });
-});
+// $(document).ready(function(){
+//     $("#multi-input-form").submit(function(event){
+//     var numbersWithMultiples = [];
+//     var changeTo =[];
+//     var changedAlready = [];
+//     var numberInputAdvanced = parseFloat($("#number-input-advanced").val());
+//     for (var i = 0; i < numberInputAdvanced ; 1++) {
+//       changedAlready.push(false);
+//     }
+//
+//     numbersWithMultiples.push(parseFloat($("#numberToChange-" + i).val());
+//     changeTo.push("wordToChange-" + i);
+//
+//     for(var j = 0; j * numbersWithMultiples[i] < numberInputAdvanced; j++){
+//       if (changedAlready[j * numbersWithMultiples[i]]) {
+//
+//       }
+//     }
+//   });
+// });
 
 
 

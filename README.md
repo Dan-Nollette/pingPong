@@ -21,7 +21,7 @@ _{The page takes in a number and out puts a list of numbers with numbers divisib
 
 ## Known Bugs
 
-_No known bugs at this time_
+_Advanced mode doesn't currently work. It allow the user to input how many number word/pairs they would like to swap in the list of numbers and populates the correct number of buttons, but it doesn't then take the input and process it._
 
 ## Support and contact details
 
