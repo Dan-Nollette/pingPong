@@ -14,8 +14,12 @@ function pingPongReplacer(number){
     alert ("That is not a valid input. Please enter a whole number greater than one.");
   } else {
     var outputString = "";
-    for(var i = 0; i < number; i++){
-      outputString += "<li>" + (i + 1) + "</li>";
+    for(var i = 1; i <= number; i++){
+      if (i % 3 === 0){
+        outputString += "<li>ping</li>";
+      } else {
+        outputString += "<li>" + i + "</li>";
+      }
     }
     return outputString;
   }
