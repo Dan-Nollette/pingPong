@@ -11,7 +11,11 @@ $(document).ready(function(){
 function pingPongReplacer(number){
   if (number !== number || number % 1 !== 0 || number <= 0){
     alert ("That is not a valid input. Please enter a whole number greater than one.");
-    return "";
+  } else {
+    var outputString = "";
+    for(var i = 0; i < number; i++){
+      outputString += "<li></li>";
+    }
+    return outputString;
   }
-  return "<li></li>"
 };
