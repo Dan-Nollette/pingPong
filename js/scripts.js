@@ -46,6 +46,8 @@ $(document).ready(function(){
 
 
 //Business Logic (Back-End)
+
+//Logic for standard Ping Pong
 function pingPongReplacer(number){
   if (number !== number || number % 1 !== 0 || number <= 0){
     alert ("That is not a valid input. Please enter a whole number greater than one.");
@@ -66,6 +68,7 @@ function pingPongReplacer(number){
   }
 };
 
+// Logic for Advanced Ping Pong
 function formIterator(number){
   if (number !== number || number % 1 !== 0 || number <= 0){
     alert ("That is not a valid input. Please enter a whole number greater than one.");
